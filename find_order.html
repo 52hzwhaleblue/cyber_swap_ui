@@ -7,10 +7,14 @@
     <title>Find Order</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/media.css">
+
+
 </head>
 <body>
     <header class="header-wrapper">
@@ -34,6 +38,29 @@
             </div>
         </div>
     </header>
+
+    <div class="menu-res">
+        <div class="menu-bar-res">
+            <div class="d-flex align-items-center">
+                <a href="" class="d-block header-logo">
+                    <img src="./assets/images/logo.png" alt="">
+                </a>
+                <a href="" class="d-block header-banner">
+                    <img src="./assets/images/banner.png" alt="">
+                </a>
+            </div>
+            <p class="res-close"><img src="./assets/images/hambuger.png" alt=""></p>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="" class="active"> Swap </a></li>
+                    <li><a href=""> How it works </a></li>
+                    <li><a href=""> FAQ </a></li>
+                    <li><a href=""> Blog </a></li>
+                    <li><a href=""> Contact </a></li>
+            </ul>
+        </nav>
+    </div>
 
     <div class="swap-wrapper find-wrapper">
         <div class="wrap-content">
@@ -60,52 +87,62 @@
                 <p class="swap-box_noti">In order to initiate your swap, please send <b>0.12334</b> BNB on <b>BSC CHAIN </b> to the wallet address displayed below</p>
 
                 <p class="swap-box_token">
-                    <span> 0x3e78d4C774d2802c41A849186dF1340A47aB85c7  </span>
+                    <span class="text-split"> 0x3e78d4C774d2802c41A849186dF1340A47aB85c7  </span>
                     <img  class="swap-box_token_copy" src="./assets/images/copy.png" alt="copy">
                 </p>
 
-                <div class="info-box">
-                    <div class="info-left">
-                        <div class="info-detail">
-                            <div class="info-text">
-                                <p>YOU SEND</p>
-                                <b>0.12334 BNB-BEP20 </b>
-                            </div>
-                            <div class="info-img rotateY_img">
-                                <img src="./assets/images/coin-icon.png" alt="">
+                <div class="info-container">
+                    <div class="info-box">
+                        <div class="info-left">
+                            <div class="info-detail">
+                                <div class="info-text">
+                                    <p>YOU SEND</p>
+                                    <b>0.12334 BNB-BEP20 </b>
+                                </div>
+                                <div class="info-img rotateY_img">
+                                    <img src="./assets/images/coin-icon.png" alt="">
+                                </div>
                             </div>
                         </div>
-                        <p class="info-sub">
-                            <span>Order ID:</span>
-                            <b> btBmrf1FyNeXdAJuX9M4g4 </b>
-                        </p>
-                        <p class="info-time">
-                            <span>Creation time:</span>
-                            <b> 5/10/2023 11:01:53 AM </b>
-                        </p>
+    
+                        <div class="info-right">
+                            <div class="info-detail">
+                                <div class="info-text">
+                                    <p>YOU RECEIVE</p>
+                                    <b>0.12334 USDT-ERC20 </b>
+                                </div>
+                                <div class="info-img rotateY_img">
+                                    <img src="./assets/images/coin-icon1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="info-box1">
+                        <div class="info-left1">
+                            <p class="info-sub">
+                                <span>Order ID:</span>
+                                <b> btBmrf1FyNeXdAJuX9M4g4 </b>
+                            </p>
+                            <p class="info-time">
+                                <span>Creation time:</span>
+                                <b> 5/10/2023 11:01:53 AM </b>
+                            </p>
+                        </div>
+    
+                        <div class="info-right1">
+                            <p class="info-sub">
+                                <span>Receiving address:</span>
+                                <b>  0xc2037....c6e000 </b>
+                            </p>
+                            <p class="info-time">
+                                <span>Time remaining:</span>
+                                <b>07:45 </b>
+                            </p>
+                        </div>
                     </div>
 
-                    <div class="info-right">
-                        <div class="info-detail">
-                            <div class="info-text">
-                                <p>YOU RECEIVE</p>
-                                <b>0.12334 USDT-ERC20 </b>
-                            </div>
-                            <div class="info-img rotateY_img">
-                                <img src="./assets/images/coin-icon1.png" alt="">
-                            </div>
-                        </div>
-                        <p class="info-sub">
-                            <span>Receiving address:</span>
-                            <b>  0xc2037....c6e000 </b>
-                        </p>
-                        <p class="info-time">
-                            <span>Time remaining:</span>
-                            <b>07:45 </b>
-                        </p>
-                    </div>
                 </div>
-
                 <div class="status-items">
                     <div class="status-item">
                         <div class="status-img rotateY_img">
@@ -167,7 +204,6 @@
                 <li><a class="rotateY_img" href=""><img src="./assets/images/mxh3.png" alt=""></a></li>
                 <li><a class="rotateY_img" href=""><img src="./assets/images/mxh4.png" alt=""></a></li>
                 <li><a class="rotateY_img" href=""><img src="./assets/images/mxh5.png" alt=""></a></li>
-                <li><a class="rotateY_img" href=""><img src="./assets/images/mxh6.png" alt=""></a></li>
             </ul>
         </div>
 

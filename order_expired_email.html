@@ -8,10 +8,13 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
-    <link rel="stylesheet" href="./assets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/media.css">
+
 </head>
 <body>
     <header class="header-wrapper">
@@ -35,6 +38,29 @@
             </div>
         </div>
     </header>
+
+    <div class="menu-res">
+        <div class="menu-bar-res">
+            <div class="d-flex align-items-center">
+                <a href="" class="d-block header-logo">
+                    <img src="./assets/images/logo.png" alt="">
+                </a>
+                <a href="" class="d-block header-banner">
+                    <img src="./assets/images/banner.png" alt="">
+                </a>
+            </div>
+            <p class="res-close"><img src="./assets/images/hambuger.png" alt=""></p>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="" class="active"> Swap </a></li>
+                    <li><a href=""> How it works </a></li>
+                    <li><a href=""> FAQ </a></li>
+                    <li><a href=""> Blog </a></li>
+                    <li><a href=""> Contact </a></li>
+            </ul>
+        </nav>
+    </div>
 
     <div class="swap-wrapper find-wrapper">
         <div class="wrap-content">
@@ -65,46 +91,57 @@
                     <img  class="swap-box_token_copy" src="./assets/images/copy.png" alt="copy">
                 </p>
 
-                <div class="info-box">
-                    <div class="info-left">
-                        <div class="info-detail">
-                            <div class="info-text">
-                                <p>YOU SEND</p>
-                                <b>0.12334 BNB-BEP20 </b>
-                            </div>
-                            <div class="info-img rotateY_img">
-                                <img src="./assets/images/coin-icon.png" alt="">
+                <div class="info-container">
+                    <div class="info-box">
+                        <div class="info-left">
+                            <div class="info-detail">
+                                <div class="info-text">
+                                    <p>YOU SEND</p>
+                                    <b>0.12334 BNB-BEP20 </b>
+                                </div>
+                                <div class="info-img rotateY_img">
+                                    <img src="./assets/images/coin-icon.png" alt="">
+                                </div>
                             </div>
                         </div>
-                        <p class="info-sub">
-                            <span>Order ID:</span>
-                            <b> btBmrf1FyNeXdAJuX9M4g4 </b>
-                        </p>
-                        <p class="info-time">
-                            <span>Creation time:</span>
-                            <b> 5/10/2023 11:01:53 AM </b>
-                        </p>
+    
+                        <div class="info-right">
+                            <div class="info-detail">
+                                <div class="info-text">
+                                    <p>YOU RECEIVE</p>
+                                    <b>0.12334 USDT-ERC20 </b>
+                                </div>
+                                <div class="info-img rotateY_img">
+                                    <img src="./assets/images/coin-icon1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="info-box1">
+                        <div class="info-left1">
+                            <p class="info-sub">
+                                <span>Order ID:</span>
+                                <b> btBmrf1FyNeXdAJuX9M4g4 </b>
+                            </p>
+                            <p class="info-time">
+                                <span>Creation time:</span>
+                                <b> 5/10/2023 11:01:53 AM </b>
+                            </p>
+                        </div>
+    
+                        <div class="info-right1">
+                            <p class="info-sub">
+                                <span>Receiving address:</span>
+                                <b>  0xc2037....c6e000 </b>
+                            </p>
+                            <p class="info-time">
+                                <span>Time remaining:</span>
+                                <b class="text-danger">Order Expired </b>
+                            </p>
+                        </div>
                     </div>
 
-                    <div class="info-right">
-                        <div class="info-detail">
-                            <div class="info-text">
-                                <p>YOU RECEIVE</p>
-                                <b>0.12334 USDT-ERC20 </b>
-                            </div>
-                            <div class="info-img rotateY_img">
-                                <img src="./assets/images/coin-icon1.png" alt="">
-                            </div>
-                        </div>
-                        <p class="info-sub">
-                            <span>Receiving address:</span>
-                            <b>  0xc2037....c6e000 </b>
-                        </p>
-                        <p class="info-time">
-                            <span>Time remaining:</span>
-                            <b class="text-danger">Order Expired </b>
-                        </p>
-                    </div>
                 </div>
 
                 <div class="expired-box">
@@ -112,11 +149,11 @@
                     <p class="expired-noti">We have not received your transaction yet, but you can choose what to do if funds arrive at this address within 24 hours. Pick one of the following:</p>
                     
                     <div class="custom-control custom-radio expired-radio">
-                        <input id="expired1" name="expired-name" type="radio" class="custom-control-input"  value="continue">
+                        <input id="expired1" name="expired-name" type="radio" class="custom-control-input"  value="sss">
                         <label class="custom-control-label" for="expired1">Continue my exchange (at the current market rate)</label>
                     </div>
                     <div class="custom-control custom-radio expired-radio">
-                        <input id="expired2" name="expired-name" type="radio" class="custom-control-input" checked value="email">
+                        <input id="expired2" name="expired-name" type="radio" class="custom-control-input" checked value="aaa">
                         <label class="custom-control-label" for="expired2">Enter your email if you want to receive notifications about changes in the status of this order</label>
                     </div>
                     <div class="swap-input swap-address expired-input_email">
@@ -207,7 +244,6 @@
                 <li><a class="rotateY_img" href=""><img src="./assets/images/mxh3.png" alt=""></a></li>
                 <li><a class="rotateY_img" href=""><img src="./assets/images/mxh4.png" alt=""></a></li>
                 <li><a class="rotateY_img" href=""><img src="./assets/images/mxh5.png" alt=""></a></li>
-                <li><a class="rotateY_img" href=""><img src="./assets/images/mxh6.png" alt=""></a></li>
             </ul>
         </div>
 
