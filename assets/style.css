@@ -377,9 +377,10 @@ textarea {
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 48px;
+    justify-content: center;
 }
 .swap-li{
-    min-width: 205px;
+    width: 50%;
     text-align: center;
     padding: 10px;
     border-radius: 5px;
@@ -695,13 +696,13 @@ color:#757c87;
 /* Status */
 .status-items{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
     padding: 18px 0px;
+    flex-flow: row wrap;
+    width: calc(100% + 140px);
+    margin: 0 -70px;
     margin-bottom: 24px;
 }
-.status-item{position: relative;}
+.status-item{position: relative;width: calc(100%/4 - 140px);margin: 0 70px 0px 70px;text-align: center;}
 .status-item:not(:last-child)::before{
 	content:"";
 	position:absolute;
@@ -709,12 +710,14 @@ color:#757c87;
 	width: 57px;
 	height: 24px;
 	left: 124%;
+	left: calc(100% + 42px);
 	top: calc(50% - 48px/2);
 }
 .status-img{
     width: 48px;
     margin: auto;
     margin-bottom: 16px;
+    position: relative;
 }
 .status-name{
     color: #fff;
