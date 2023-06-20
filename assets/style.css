@@ -526,7 +526,7 @@ textarea {
 }
 
 .swap-wrapper .wrap-content {
-    max-width: 630px;
+    max-width: 850px;
 }
 
 .swap-ul {
@@ -544,14 +544,13 @@ textarea {
 .swap-li {
     width: 50%;
     text-align: center;
-    padding: 10px;
-    border-radius: 5px;
     background: #000F25;
 }
 
-.swap-li.active,
+.swap-li a.active,
 .swap-li:hover {
     background: #125AE5;
+    border-radius: 5px;
 }
 
 .swap-li.active a {}
@@ -559,6 +558,9 @@ textarea {
 .swap-li a {
     color: #fff;
     font-size: 20px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .swap-box {
@@ -697,7 +699,9 @@ textarea {
 
 /* Footer */
 
-.footer-wrapper {}
+.footer-wrapper {
+    height: 193px;
+}
 
 .footer-wrapper .wrap-content {
     display: flex;
@@ -799,22 +803,34 @@ textarea {
 }
 
 .swap-box_token {
-    background: url(./images/qr.png) no-repeat right;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 24px;
 }
 
-.swap-box_token span {
+.swap-box_token p {
     color: #fff;
     font-size: 24px;
     font-weight: 600;
+    -webkit-line-clamp: 1;
+    width: calc(100% - 70px);
+}
+
+.swap-box_token_btn {
+    width: 68px;
+}
+
+.swap-box_token_btn img {
+    cursor: pointer;
 }
 
 .swap-box_token_copy {
-    margin-right: 40px;
+    margin-right: 16px;
 }
+
+.swap-box_token_qr {}
 
 .info-box::before {
     content: "";
@@ -862,9 +878,13 @@ textarea {
 
 .info-text p {
     margin-bottom: 10px;
+    font-weight: 500;
 }
 
-.info-text b {}
+.info-text b {
+    font-size: 16px;
+    font-weight: 500;
+}
 
 .info-img {
     width: 48px;
@@ -1135,6 +1155,7 @@ textarea {
     font-size: 16px;
     font-weight: 500;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 
@@ -1649,6 +1670,104 @@ textarea {
 
 .select-wrapper {}
 
+.modal.show{
+	    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+/* QR MODAL */
+
+.qr-modal.show {
+    /* From https: //css.glass */
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.4px);
+    -webkit-backdrop-filter: blur(2.4px);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+
+}
+
+.qr-modal .modal-dialog {
+}
+
+.qr-modal .modal-content {
+    max-width: 375px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #000F25;
+    padding: 24px;
+    border: 1px #125AE5 solid;
+}
+
+.qr-head {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.qr-sub {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.qr-big {
+    margin-top: 24px;
+}
+
+
+/* CHAIN MODAL */
+
+.chain-modal {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.4px);
+    -webkit-backdrop-filter: blur(2.4px);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.chain-modal .modal-dialog {}
+
+.chain-modal .modal-content {
+    max-width: 375px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #000F25;
+}
+
+
+/* TOKEN MODAL */
+
+.token-modal {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.4px);
+    -webkit-backdrop-filter: blur(2.4px);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.token-modal .modal-dialog {}
+
+.token-modal .modal-content {
+    max-width: 375px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #000F25;
+}
+
+.modal .select-wrapper .wrap-content {
+    /* max-width: unset; */
+    width: 100%;
+}
+
 .select-wrapper .wrap-content {
     max-width: 375px;
     max-height: 600px;
@@ -1726,6 +1845,7 @@ textarea {
     font-size: 16px;
     font-weight: 500;
     text-transform: capitalize;
+    cursor: pointer;
 }
 
 

@@ -1,10 +1,10 @@
 function menu() {
     /* Menu fixed */
     $(window).scroll(function() {
-        var cach_top = $(window).scrollTop();
+        var catch_top = $(window).scrollTop();
         var heaigt_header = $('.header-wrapper').height();
 
-        if (cach_top >= heaigt_header) {
+        if (catch_top >= heaigt_header) {
             if (!$('.header-wrapper').hasClass('fix_head animate__animated animate__fadeIn')) {
                 $('.header-wrapper').addClass('fix_head animate__animated animate__fadeIn');
             }

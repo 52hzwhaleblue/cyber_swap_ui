@@ -1,132 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="./assets/media.css">
+    <link rel="stylesheet" href="./assets/mmenu/mmenu.css">
 
 
 </head>
+
 <body>
     <header class="header-wrapper">
         <div class="wrap-content d-flex flex-wrap justify-content-between align-items-center">
             <div class="header-left">
-                <a href="" class="d-block header-logo">
+                <a href="index.html" class="d-block header-logo">
                     <img src="./assets/images/logo.png" alt="">
                 </a>
-                <a href="" class="d-block header-banner">
+                <a href="index.html" class="d-block header-banner">
                     <img src="./assets/images/banner.png" alt="">
                 </a>
             </div>
-            <div class="header-right menu">
-                <ul class="d-flex flex-wrap justify-content-between align-items-center">
-                    <li><a href="" class="active"> Swap </a></li>
-                    <li><a href=""> How it works </a></li>
-                    <li><a href=""> FAQ </a></li>
-                    <li><a href=""> Blog </a></li>
-                    <li><a href=""> Contact </a></li>
-                </ul>
+            <div class="header-right">
+                <div class="w-menu">
+                    <div class="menu">
+                        <div class="wrap-content">
+                            <ul class="d-flex flex-wrap justify-content-between align-items-center">
+                                <li><a href="index.html" class="active"> Swap </a></li>
+                                <li><a href="how_it_works.html"> How it works </a></li>
+                                <li><a href="faq.html"> FAQ </a></li>
+                                <li><a href="blog.html"> Blog </a></li>
+                                <li><a href="contact.html"> Contact </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="menu-res">
+                        <div class="menu-bar-res">
+                            <div class="d-flex align-items-center">
+                                <a href="index.html" class="d-block header-logo">
+                                    <img src="./assets/images/logo.png" alt="">
+                                </a>
+                                <a href="index.html" class="d-block header-banner">
+                                    <img src="./assets/images/banner.png" alt="">
+                                </a>
+                            </div>
+                            <a id="hamburger" class="res-close mm-btn mm-btn_close mm-navbar__btn" href="#menu" title="Menu"><img src="./assets/images/hambuger.png" alt=""></a>
+
+                        </div>
+                        <nav id="menu">
+                            <ul>
+                                <li><a href="index.html" class="active"> Swap </a></li>
+                                <li><a href="how_it_works.html"> How it works </a></li>
+                                <li><a href="faq.html"> FAQ </a></li>
+                                <li><a href="blog.html"> Blog </a></li>
+                                <li><a href="contact.html"> Contact </a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
-    <div class="menu-res">
-        <div class="menu-bar-res">
-            <div class="d-flex align-items-center">
-                <a href="" class="d-block header-logo">
-                    <img src="./assets/images/logo.png" alt="">
-                </a>
-                <a href="" class="d-block header-banner">
-                    <img src="./assets/images/banner.png" alt="">
-                </a>
-            </div>
-            <p class="res-close"><img src="./assets/images/hambuger.png" alt=""></p>
-        </div>
-        <nav id="menu">
-            <ul>
-                <li><a href="" class="active"> Swap </a></li>
-                    <li><a href=""> How it works </a></li>
-                    <li><a href=""> FAQ </a></li>
-                    <li><a href=""> Blog </a></li>
-                    <li><a href=""> Contact </a></li>
-            </ul>
-        </nav>
-    </div>
-
     <div class="swap-wrapper">
         <div class="wrap-content">
             <ul class="nav nav-tabs swap-ul" role="tablist">
-                <li  role="presentation" class="active swap-li">
-                    <a class=" active " href="#swap" aria-controls="all" role="tab" data-toggle="tab">Swap</a>
+                <li class=" swap-li" role="presentation">
+                    <a class="active" href="#swap" aria-controls="swap" role="tab" data-toggle="tab">Swap</a>
                 </li>
-                <li  role="presentation" class="swap-li">
-                    <a class=" " href="#find" aria-controls="all" role="tab" data-toggle="tab">Find</a>
+                <li class="swap-li" role="presentation">
+                    <a class="" href="#find" aria-controls="find" role="tab" data-toggle="tab">Find</a>
                 </li>
             </ul>
 
-            <div class="swap-box">
-                <div class="swap-from">
-                    <div class="swap-title">
-                        <p>From</p>
-                        <select name="" id="" title="test" class="swap-select">
-                            <option value="">
-                                <img src="./assets/images/deco.png" alt="deco">
-                                <span>BSC chain</span>
-                            </option>
-                        </select>
-                    </div>
-                    <div class="swap-input">
-                        <div class="d-flex flex-column w-100">
-                         <span class="swap-input_desc">Send:</span>
-                         <input type="text" placeholder="0.12334">
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="swap">
+                    <div class="swap-box">
+                        <div class="swap-from">
+                            <div class="swap-title">
+                                <p>From</p>
+                                <select name="" id="" title="test" class="swap-select" data-toggle="modal" data-target="#selectChainModal">
+                                    <option value="">
+                                        <img src="./assets/images/deco.png" alt="deco">
+                                        <span>BSC chain</span>
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="swap-input">
+                                <div class="d-flex flex-column w-100">
+                                    <span class="swap-input_desc">Send:</span>
+                                    <input type="text" placeholder="0.12334">
+                                </div>
+                                <select name="" id="swap-select1" title="test" class="swap-select1" data-toggle="modal" data-target="#selectTokenModal">
+                                    <option value="">
+                                        <span>BNB</span>
+                                    </option>
+                                </select>
+                            </div>
                         </div>
-                        <select name="" id="swap-select1" title="test" class="swap-select1">
-                            <option value="">
-                                <span>BNB</span>
-                            </option>
-                        </select>
+                        <div class="swap-to">
+                            <div class="swap-title">
+                                <p>To</p>
+                                <select name="" id="" title="test" class="swap-select" data-toggle="modal" data-target="#selectChainModal">
+                                    <option value="">
+                                        <img src="./assets/images/deco.png" alt="deco">
+                                        <span>BSC chain</span>
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="swap-input">
+                                <div class="d-flex flex-column w-100">
+                                    <span class="swap-input_desc">Receive:</span>
+                                    <input type="text" placeholder="0.12334">
+                                </div>
+                                <select name="" id="swap-select1" title="test" class="swap-select1" data-toggle="modal" data-target="#selectTokenModal">
+                                    <option value="">
+                                        <span>BNB</span>
+                                    </option>
+                                </select>
+                            </div>
+
+                            <div class="swap-input swap-address">
+                                <div class="d-flex flex-column w-100">
+                                    <span class="swap-input_desc">Receiving Wallet Address:</span>
+                                    <input type="text" placeholder="Your receiving address">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swap-btn">
+                            <input type="submit" value="SWAP NOW">
+                        </div>
                     </div>
                 </div>
-                <div class="swap-to">
-                    <div class="swap-title">
-                        <p>To</p>
-                        <select name="" id="" title="test" class="swap-select">
-                            <option value="">
-                                <img src="./assets/images/deco.png" alt="deco">
-                                <span>BSC chain</span>
-                            </option>
-                        </select>
-                    </div>
-                    <div class="swap-input">
+                <div role="tabpanel" class="tab-pane" id="find">
+                    <!-- Find order -->
+                    <div class="swap-input swap-input_search ">
                         <div class="d-flex flex-column w-100">
-                         <span class="swap-input_desc">Receive:</span>
-                         <input type="text" placeholder="0.12334">
+                            <span class="swap-input_desc">Order ID:</span>
+                            <input type="text" placeholder="CS-1234455" required>
                         </div>
-                        <select name="" id="swap-select1" title="test" class="swap-select1">
-                            <option value="">
-                                <span>BNB</span>
-                            </option>
-                        </select>
+                        <input type="submit" onclick="window.location='order_expired_email.html';">
                     </div>
 
-                    <div class="swap-input swap-address">
-                        <div class="d-flex flex-column w-100">
-                         <span class="swap-input_desc">Receiving Wallet Address:</span>
-                         <input type="text" placeholder="Your receiving address">
+                    <p class="swap-input_search_warning"> For privacy reasons, Cryperr Swap Order pages are only available to search & view within 48 hours after the Cryperr Swap Order was created</p>
+
+                    <div class="swap-box">
+                        <p class="swap-box_noti">In order to initiate your swap, please send <b>0.12334</b> BNB on <b>BSC CHAIN </b> to the wallet address displayed below</p>
+
+                        <div class="swap-box_token">
+                            <p class="text-split"> 0x3e78d4C774d2802c41A849186dF1340A47aB85c7 </p>
+                            <div class="swap-box_token_btn">
+                                <img class="swap-box_token_copy" src="./assets/images/copy.png" alt="copy">
+                                <img class="swap-box_token_qr" src="./assets/images/qr.png" alt="qr" data-toggle="modal" data-target="#QRModal">
+                            </div>
                         </div>
+
+                        <div class="info-container">
+                            <div class="info-box">
+                                <div class="info-left">
+                                    <div class="info-detail">
+                                        <div class="info-text">
+                                            <p>YOU SEND</p>
+                                            <b>0.12334 BNB-BEP20 </b>
+                                        </div>
+                                        <div class="info-img rotateY_img">
+                                            <img src="./assets/images/coin-icon.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="info-right">
+                                    <div class="info-detail">
+                                        <div class="info-text">
+                                            <p>YOU RECEIVE</p>
+                                            <b>0.12334 USDT-ERC20 </b>
+                                        </div>
+                                        <div class="info-img rotateY_img">
+                                            <img src="./assets/images/coin-icon1.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info-box1">
+                                <div class="info-left1">
+                                    <p class="info-sub">
+                                        <span>Order ID:</span>
+                                        <b> btBmrf1FyNeXdAJuX9M4g4 </b>
+                                    </p>
+                                    <p class="info-time">
+                                        <span>Creation time:</span>
+                                        <b> 5/10/2023 11:01:53 AM </b>
+                                    </p>
+                                </div>
+
+                                <div class="info-right1">
+                                    <p class="info-sub">
+                                        <span>Receiving address:</span>
+                                        <b>  0xc2037....c6e000 </b>
+                                    </p>
+                                    <p class="info-time">
+                                        <span>Time remaining:</span>
+                                        <b>07:45 </b>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="status-items">
+                            <div class="status-item">
+                                <div class="status-img rotateY_img">
+                                    <img src="./assets/images/status1.png" alt="status1">
+                                </div>
+                                <p class="status-name">Order Received</p>
+                            </div>
+                            <div class="status-item">
+                                <div class="status-img rotateY_img">
+                                    <img src="./assets/images/status2.png" alt="status2">
+                                </div>
+                                <p class="status-name">Awaiting confirmations</p>
+                            </div>
+                            <div class="status-item">
+                                <div class="status-img rotateY_img">
+                                    <img src="./assets/images/status3.png" alt="status3">
+                                </div>
+                                <p class="status-name">Swapping</p>
+                            </div>
+                            <div class="status-item">
+                                <div class="status-img rotateY_img">
+                                    <img src="./assets/images/status4.png" alt="status4">
+                                </div>
+                                <p class="status-name">Done</p>
+                            </div>
+                        </div>
+
+                        <p class="status-alert">
+                            Once <b>Order Received</b> lights up, in the order displayed above, your transaction is in motion. On average, it takes 20 minutes to arrive in your Receiving Address.
+                        </p>
+
+                        <p class="status-ask">Having trouble with your order?</p>
+
+                        <p class="status-contact">Contact tecnical support here</p>
+
+                        <a href="" class="status-telegram rotateY_img">
+                            <img src="./assets/images/telegram.png" alt="telegram">
+                        </a>
                     </div>
-                </div>
-                <div class="swap-btn">
-                    <input type="submit" value="SWAP NOW">
                 </div>
             </div>
         </div>
@@ -146,11 +276,21 @@
         </div>
         <div class="footer-item">
             <ul class="social-ul">
-                <li><a class="rotateY_img" href=""><img src="./assets/images/mxh1.png" alt=""></a></li>
-                <li><a class="rotateY_img" href=""><img src="./assets/images/mxh2.png" alt=""></a></li>
-                <li><a class="rotateY_img" href=""><img src="./assets/images/mxh3.png" alt=""></a></li>
-                <li><a class="rotateY_img" href=""><img src="./assets/images/mxh4.png" alt=""></a></li>
-                <li><a class="rotateY_img" href=""><img src="./assets/images/mxh5.png" alt=""></a></li>
+                <li>
+                    <a class="rotateY_img" href=""><img src="./assets/images/mxh1.png" alt=""></a>
+                </li>
+                <li>
+                    <a class="rotateY_img" href=""><img src="./assets/images/mxh2.png" alt=""></a>
+                </li>
+                <li>
+                    <a class="rotateY_img" href=""><img src="./assets/images/mxh3.png" alt=""></a>
+                </li>
+                <li>
+                    <a class="rotateY_img" href=""><img src="./assets/images/mxh4.png" alt=""></a>
+                </li>
+                <li>
+                    <a class="rotateY_img" href=""><img src="./assets/images/mxh5.png" alt=""></a>
+                </li>
             </ul>
         </div>
 
@@ -163,4 +303,163 @@
         </div>
     </div>
 </footer>
+
+<!-- Modal Select Chain -->
+<div class="modal fade chain-modal" id="selectChainModal" tabindex="-1" role="dialog" aria-labelledby="selectChainModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <div class="select-wrapper token-wrapper">
+                    <div class="wrap-content">
+                        <div class="select-box">
+                            <p class="select-title">Select Chain</p>
+
+                            <div class="select-input">
+                                <input type="text" placeholder="Search by name or chain ID">
+                            </div>
+
+                            <div class="select-items">
+                                <div class="select-item">
+                                    <div class="select-img">
+                                        <img src="./assets/images/select.png" alt="">
+                                    </div>
+                                    <div class="select-info">
+                                        <p class="select-name">UDOGE</p>
+                                        <p class="select-desc">UKA DOGE COIN</p>
+                                    </div>
+                                </div>
+                                <div class="select-item">
+                                    <div class="select-img">
+                                        <img src="./assets/images/select.png" alt="">
+                                    </div>
+                                    <div class="select-info">
+                                        <p class="select-name">UDOGE</p>
+                                        <p class="select-desc">UKA DOGE COIN</p>
+                                    </div>
+                                </div>
+                                <div class="select-item">
+                                    <div class="select-img">
+                                        <img src="./assets/images/select.png" alt="">
+                                    </div>
+                                    <div class="select-info">
+                                        <p class="select-name">UDOGE</p>
+                                        <p class="select-desc">UKA DOGE COIN</p>
+                                    </div>
+                                </div>
+                                <div class="select-item">
+                                    <div class="select-img">
+                                        <img src="./assets/images/select.png" alt="">
+                                    </div>
+                                    <div class="select-info">
+                                        <p class="select-name">UDOGE</p>
+                                        <p class="select-desc">UKA DOGE COIN</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="select-btn" data-dismiss="modal">
+                                <p>close</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Select Token -->
+<div class="modal fade token-modal" id="selectTokenModal" tabindex="-1" role="dialog" aria-labelledby="selectTokenModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <div class="select-wrapper token-wrapper">
+                    <div class="wrap-content">
+                        <div class="select-box">
+                            <p class="select-title">Select Token</p>
+
+                            <div class="select-input">
+                                <input type="text" placeholder="Search name or address">
+                            </div>
+
+                            <div class="select-items">
+                                <div class="select-item">
+                                    <div class="select-img">
+                                        <img src="./assets/images/select.png" alt="">
+                                    </div>
+                                    <div class="select-info">
+                                        <p class="select-name">UDOGE</p>
+                                        <p class="select-desc">UKA DOGE COIN</p>
+                                    </div>
+                                </div>
+                                <div class="select-item">
+                                    <div class="select-img">
+                                        <img src="./assets/images/select.png" alt="">
+                                    </div>
+                                    <div class="select-info">
+                                        <p class="select-name">UDOGE</p>
+                                        <p class="select-desc">UKA DOGE COIN</p>
+                                    </div>
+                                </div>
+                                <div class="select-item">
+                                    <div class="select-img">
+                                        <img src="./assets/images/select.png" alt="">
+                                    </div>
+                                    <div class="select-info">
+                                        <p class="select-name">UDOGE</p>
+                                        <p class="select-desc">UKA DOGE COIN</p>
+                                    </div>
+                                </div>
+                                <div class="select-item">
+                                    <div class="select-img">
+                                        <img src="./assets/images/select.png" alt="">
+                                    </div>
+                                    <div class="select-info">
+                                        <p class="select-name">UDOGE</p>
+                                        <p class="select-desc">UKA DOGE COIN</p>
+                                    </div>
+                                </div>
+                                <div class="select-item">
+                                    <div class="select-img">
+                                        <img src="./assets/images/select.png" alt="">
+                                    </div>
+                                    <div class="select-info">
+                                        <p class="select-name">UDOGE</p>
+                                        <p class="select-desc">UKA DOGE COIN</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="select-btn" data-dismiss="modal">
+                                <p>close</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal QR -->
+<div class="modal fade qr-modal" id="QRModal" tabindex="-1" role="dialog" aria-labelledby="QRModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <p class="qr-head">Address QR code</p>
+                <p class="qr-sub">(Scan in your wallet app)</p>
+
+                <div class="qr-big">
+                    <img src="./assets/images/qr_big.png" alt="qr_big">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="http://xuongjeannamc665.com/assets/js/jquery.min.js?v=yOG53fafm"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="./assets/mmenu/mmenu.js"></script>
+<script src="./assets/app.js"></script>
+
 </html>
