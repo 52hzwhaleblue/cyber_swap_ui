@@ -1177,10 +1177,17 @@ textarea {
     -webkit-line-clamp: 5;
 }
 
-.work-paginate {
+.work-pag {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    width: 138px;
+}
+
+.work-pag p {
+    padding: 0 16px;
+}
+
+.work-pag a {
+    display: block;
 }
 
 .work-prev {
@@ -1581,6 +1588,11 @@ textarea {
     text-indent: 16px;
     font-size: 16px;
     border-radius: 5px;
+}
+
+.contact-input input::-webkit-input-placeholder {
+    color: #Fff;
+    font-size: 16px;
 }
 
 .contact-textarea {

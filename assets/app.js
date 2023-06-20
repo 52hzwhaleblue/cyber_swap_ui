@@ -32,6 +32,17 @@ function menu() {
             }
         });
     }
+
+    // FAQ
+    if ($('.faq-items').length) {
+
+        $('.faq-item:first').addClass('faq-active');
+
+        $('.faq-item').click(function() {
+            $(this).parents('.faq-wrapper').find('.faq-item').removeClass('faq-active');
+            $(this).addClass('faq-active');
+        })
+    }
 }
 
 $(document).ready(function() {
