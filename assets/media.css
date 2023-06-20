@@ -7,6 +7,18 @@
     
     .wrap-content{width: calc(100% - 20px);} 
 
+    .header-left {
+    display: none !important;
+}
+
+.menu {
+    display: none;
+}
+
+.header-right {
+    width: 100%;
+}
+    
         .contact-wrapper {
     margin: 0;
 }
@@ -22,7 +34,9 @@
 .blog-wrapper .flex-cus {
     margin: 0 -6px;
 }
-    
+    .fix_head .menu-res{
+      margin-bottom:0;
+    }
     .menu-res{display: block;} 
         .header-logo {
         width: 24px;
@@ -32,8 +46,8 @@
         width: 73px;
     }
 
-    .header-wrapper{
-        display: none;
+    .header-wrapper .wrap-content{
+        padding: 0;
     }
 
     .swap-wrapper {
