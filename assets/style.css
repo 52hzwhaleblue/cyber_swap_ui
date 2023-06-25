@@ -518,11 +518,27 @@ textarea {
 }
 
 
-/* Swap */
+/* Index */
+.index-wrapper{}
+.index-wrapper .wrap-content{max-width: 630px !important;}
 
+/* Your order */
+.your-wrapper{}
+.your-wrapper .wrap-content{
+    max-width: 1290px !important;
+}
+.swap-box_your_order{
+    max-width: 850px;
+    margin: auto;
+}
+
+.your-wrapper .detail-btn{
+    margin-bottom: 48px !important;
+}
+/* Swap */
 .swap-wrapper {
     margin-top: 124px;
-    margin-bottom: 48px;
+    margin-bottom: 124px;
 }
 
 .swap-wrapper .wrap-content {
@@ -559,7 +575,7 @@ textarea {
     color: #fff;
     font-size: 20px;
     display: block;
-    padding: 10px;
+    padding: 7px 10px;
     border-radius: 5px;
 }
 
@@ -568,7 +584,7 @@ textarea {
     padding: 30px;
     border-radius: 10px;
 }
-
+.swap-box_find_order{/* width: 850px; */}
 .swap-from {
     padding-bottom: 56px;
     background: url(./images/swap-change.png) no-repeat bottom;
@@ -584,37 +600,43 @@ textarea {
 }
 
 .swap-select {
-    background: url(./images/deco.png) no-repeat 12%, url(./images/arrow.png) no-repeat right, #3359A2;
+    background:  url(./images/arrow.png) no-repeat right, #3359A2;
     outline: 0;
     border: 0;
     color: #fff;
-    min-width: 145px;
+    cursor: pointer;
     text-align: center;
-    padding: 4px 0px 4px 0px;
     border-radius: 10px;
-    padding-left: 20px;
-    appearance: none;
 }
 
-.swap-select option {}
-
+ .swap-select_box {
+    padding: 6px 8px;
+}
+ .swap-select_box img{}
+ .swap-select_box span{
+    margin-right: 20px;
+    display: inline-block;
+}
 .swap-select1 {
     color: #fff;
-    background: transparent url(./images/deco.png) no-repeat left;
+    background: url(./images/deco.png) no-repeat left, url(./images/arrow1.png) no-repeat right;
     border: 0;
     font-size: 16px;
     padding-left: 30px;
     font-weight: 600;
+    padding-right: 24px;
+    cursor: pointer;
 }
 
-.swap-select1 option {
-    background: transparent url(./images/deco.png) no-repeat left;
+.swap-select1 span {
+	font-size: 12px;
 }
 
 .swap-title p {
     color: #fff;
     margin-bottom: 0;
     margin-right: 8px;
+    min-width: 40px;
 }
 
 .swap-input {
@@ -696,7 +718,6 @@ textarea {
     border-radius: 5px;
 }
 
-
 /* Footer */
 
 .footer-wrapper {
@@ -764,7 +785,8 @@ textarea {
 
 /* Find Order */
 
-.find-wrapper {}
+.find-wrapper {
+}
 
 .find-wrapper .wrap-content {
     max-width: 850px;
@@ -894,7 +916,7 @@ textarea {
     font-size: 16px;
     padding: 4px 24px 4px 0px;
     background: url(./images/copy.png) no-repeat right;
-    margin-bottom: 16px;
+    margin-bottom: 6px;
     width: 100%;
 }
 
@@ -904,7 +926,9 @@ textarea {
     font-weight: 600;
 }
 
-.info-time {}
+.info-time {
+    font-size: 16px;
+}
 
 .info-right {
     width: 43.3%;
@@ -930,8 +954,17 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: relative;
 }
-
+.info-box1::before{
+	content:"";
+	position:absolute;
+	width: 2px;
+	height: 62px;
+	background: #D9D9D9;
+	left: calc(50% - 2px/2);
+	top: calc(50% - 62px/2);
+}
 .info-left1 {
     align-items: flex-start;
 }
@@ -949,30 +982,43 @@ textarea {
 /* Status */
 
 .status-items {
-    display: flex;
+    /*     display: flex;
     padding: 18px 0px;
     flex-flow: row wrap;
     width: calc(100% + 140px);
     margin: 0 -70px;
+    margin-bottom: 24px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-bottom: 24px;
-}
+    }
 
 .status-item {
-    position: relative;
+    /*     position: relative;
     width: calc(100%/4 - 140px);
     margin: 0 70px 0px 70px;
+    text-align: center; */
     text-align: center;
-}
+    position: relative;
+    }
 
+.status-item:nth-child(1)::before{
+    left: calc(100% + 40px);
+}
+.status-item:nth-child(2)::before{
+    left: calc(100% + 42px);
+}
+.status-item:nth-child(3)::before{
+    left: calc(100% + 42px);
+}
 .status-item:not(:last-child)::before {
     content: "";
     position: absolute;
     background: url(./images/arrow-find.png);
     width: 57px;
     height: 24px;
-    left: 124%;
-    left: calc(100% + 42px);
-    top: calc(50% - 48px/2);
+    top: 10px;
 }
 
 .status-img {
@@ -981,7 +1027,7 @@ textarea {
     margin-bottom: 16px;
     position: relative;
 }
-
+.status-img:not(.active) img{filter: brightness(0.5);}
 .status-name {
     color: #fff;
 }
@@ -992,6 +1038,10 @@ textarea {
     text-align: center;
     margin-bottom: 24px;
     line-height: 22px;
+    max-width: 100%;
+    width: 87%;
+    margin: auto;
+    margin-bottom: 24px;
 }
 
 .status-alert b {
@@ -1037,7 +1087,7 @@ textarea {
     font-weight: 600;
     margin-bottom: 24px;
     padding: 3px 0px 3px 40px;
-    background: url(./images/warning.png) no-repeat left top;
+    background: url(./images/warning.png) no-repeat left;
 }
 
 .expired-noti {
@@ -1115,7 +1165,8 @@ textarea {
 .email-modal {}
 
 .email-modal .modal-dialog {
-    max-width: 375px;
+    max-width: 100%;
+    width: 375px;
 }
 
 .email-modal .modal-content {
@@ -1126,6 +1177,8 @@ textarea {
 
 .email-modal .modal-body {
     padding: 24px;
+    border: 1px #125AE5 solid;
+    border-radius: 8px;
 }
 
 .email-modal_checked {}
@@ -1302,10 +1355,12 @@ textarea {
 
 .faq-desc {
     -webkit-line-clamp: 7;
-    line-height: 35px;
+    /* line-height: 35px; */
     display: none;
 }
-
+.faq-desc p{
+	margin-bottom: 24px;
+}
 .faq-desc b {
     color: #125AE5;
 }
@@ -1448,7 +1503,7 @@ textarea {
 .detail-btn {
     display: inline-block;
     border: 1px #125ae5 solid;
-    padding: 12px 16px;
+    padding: 7px 16px;
     border-radius: 5px;
     margin-bottom: 48px;
 }
@@ -1626,16 +1681,16 @@ textarea {
     font-weight: 500;
 }
 
-.contact-textarea textarea {
+.contact-textarea p {
     background: transparent;
     color: #Fff;
     border: 1px #125AE5 solid;
     border-radius: 10px;
     width: 100%;
     height: 176px;
-    text-align: left;
     padding: 8px 16px;
     font-size: 16px;
+    text-align: left;
 }
 
 .contact-right {
@@ -1650,7 +1705,7 @@ textarea {
 .contact-btn {
     width: 210px;
     height: 54px;
-    margin: auto;
+    margin: 0;
 }
 
 .contact-btn input {
@@ -1858,3 +1913,4 @@ textarea {
     justify-content: center;
     align-items: center;
 }
+
